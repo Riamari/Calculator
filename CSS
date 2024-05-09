@@ -19,24 +19,25 @@
 .Calculator{
     background: gray;
     padding: 20px 20px;
-    border-radius: 20%;
+    border-radius: 5%;
 
 }
-.Calculator form input{
+.Calculator form input { 
     border: 20 solid gray; 
     outline: 0;
     width: 60;
     height: 60;
-    border-radius: 7px;
+    border-radius: 20px;
     background-color: whitesmoke;
     box-shadow: -8px -8px 15px rgba(225,225,225,0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); 
-    font-size: 24px;
+    font-size: 40px;
     color: black
-    cursor: pointer;
-    margin: 10;
+    cursor; pointer-events:
+    }
+   
 
 
-}
+
 
 form .display{
     display: flex;
