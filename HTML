@@ -1,54 +1,42 @@
 <Doctype html>
     <html>
         <head>
-        <meta name="viewpoint" content="width=ddevice-width, initial-scale=1.0">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>Calculator</title>
         <link rel="stylesheet" href="CSS">
         </head>
             <body>
 
-                <div class="container">
-                    <div class="Calculator">
-                        <form>
-                            <div class="display">
-                                <input type="text" name="display"> 
-                            </div>
+                <div id="calculator">
+                    <input id="display" readonly>
+                        <div id="keys">
+                           
+                          
+                            
+                                <button onclick="appendToDisplay('7')">7</button>
+                                <button onclick="appendToDisplay('8')">8</button>
+                                <button onclick="appendToDisplay('9')">9</button>
+                                <button onclick="appendToDisplay('/')">/</button>
+                                <button onclick="appendToDisplay('4')">4</button>
+                                <button onclick="appendToDisplay('5')">5</button>
+                                <button onclick="appendToDisplay('6')">6</button>
+                                <button onclick="appendToDisplay('*')">*</button>
+                                <button onclick="appendToDisplay('1')">1</button>
+                                <button onclick="appendToDisplay('2')">2</button>
+                                <button onclick="appendToDisplay('3')">3</button>
+                                <button onclick="appendToDisplay('-')">-</button>
+                                <button onclick="appendToDisplay('0')">0</button>
+                                <button onclick="appendToDisplay('.')">.</button>
+                                <button onclick="appendToDisplay('+')">+</button>
+                                <button onclick="calculate()"class="operator-btn">=</button>
+                               
 
-                            <div>
-                                <input type="button" value="7" onclick="display.value += '7'">
-                                <input type="button" value="8" onclick="display.value += '8'">
-                                <input type="button" value="9" onclick="display.value += '9'">
-                                <input type="button" value="/" onclick="display.value += '/'">
-                                
-                            </div>
-                            <div>
-                                <input type="button" value="4" onclick="display.value += '4'">
-                                <input type="button" value="5" onclick="display.value += '5'">
-                                <input type="button" value="6" onclick="display.value += '6'">
-                                <input type="button" value="*" onclick="display.value += '*'">
-    
-                            </div>
-                            <div>
-                                <input type="button" value="1" onclick="display.value += '1'">
-                                <input type="button" value="2" onclick="display.value += '2'">
-                                <input type="button" value="3" onclick="display.value += '3'">
-                                <input type="button" value="-" onclick="display.value += '-'">
-                            </div>
-                            <div>
-                                <input type="button" value="0" onclick="display.value += '0'">
-                                <input type="button" value="." onclick="display.value += '.'">
-                                <input type="button" value="+" onclick="display.value += '+'">
-                                <input type="button" value="=" onclick="display.value = eval(display.value)" class="= operator">
-                            </div>
-                        </form>
 
-                    </div>
-
+                        </div>
                 </div>
 
                  
-                 </div>
-                 <script src="javascript"></script>
+                 <script src="index.js"></script>
             </body>
     </html> 
         
